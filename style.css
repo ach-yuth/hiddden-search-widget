@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  background: linear-gradient(90deg, #2828be, #2b2bf7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container input {
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  background-color: white;
+  border: 0;
+}
+.container.active input {
+  width: 200px;
+}
+.container {
+  position: relative;
+}
+.btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  font-size: 24px;
+}
+.container.active .btn {
+  transform: translateX(148px);
+}
+.btn:focus,
+input:focus {
+  outline: none;
+}
